@@ -4,6 +4,11 @@
              xmlns:local="clr-namespace:AutoUpdater"
              StartupUri="MainWindow.xaml">
     <Application.Resources>
-         
+        <ResourceDictionary Source="Resources/Theme.xaml">
+            <ResourceDictionary.MergedDictionaries>
+                <!-- Other merged dictionaries here -->
+            </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
+        </ResourceDictionary>
     </Application.Resources>
 </Application>

@@ -21,8 +21,8 @@ namespace AutoUpdater
     /// </summary>
     public partial class MainWindow : Window
     {
-        public static readonly string GITHUB_USERNAME = "ciribob";
-        public static readonly string GITHUB_REPOSITORY = "DCS-SimpleRadioStandalone";
+        public static readonly string GITHUB_USERNAME = "azrialtide";
+        public static readonly string GITHUB_REPOSITORY = "StarCitizen-SimpleRadioStandalone";
         // Required for all requests against the GitHub API, as per https://developer.github.com/v3/#user-agent-required
         public static readonly string GITHUB_USER_AGENT = $"{GITHUB_USERNAME}_{GITHUB_REPOSITORY}";
         private Uri _uri;
@@ -42,7 +42,7 @@ namespace AutoUpdater
             QuitSimpleRadio();
             if (IsAnotherRunning())
             {
-                MessageBox.Show("Please close DCS-SimpleRadio Standalone before running", "SRS Auto Updater",
+                MessageBox.Show("Please close any open copies SC-SR before running", "SC-SR Auto Updater",
                     MessageBoxButton.OK, MessageBoxImage.Error);
                 Environment.Exit(0);
 
@@ -60,23 +60,11 @@ namespace AutoUpdater
             
         }
 
-        private bool IsDCSRunning()
-        {
-            foreach (var clsProcess in Process.GetProcesses())
-            {
-                if (clsProcess.ProcessName.ToLower().Trim().Equals("dcs"))
-                {
-                    return true;
-                }
-            }
-            return false;
-        }
-
         private void QuitSimpleRadio()
         {
             foreach (var clsProcess in Process.GetProcesses())
             {
-                if (clsProcess.ProcessName.ToLower().Trim().StartsWith("sr-server") || clsProcess.ProcessName.ToLower().Trim().StartsWith("sr-client"))
+                if (clsProcess.ProcessName.ToLower().Trim().StartsWith("SC-SR-server") || clsProcess.ProcessName.ToLower().Trim().StartsWith("SC-SR-client"))
                 {
                     clsProcess.Kill();
                     clsProcess.WaitForExit(5000);
@@ -104,7 +92,7 @@ namespace AutoUpdater
 
         private async Task<Uri> GetPathToLatestVersion()
         {
-            Status.Content = "Finding Latest SRS Version";
+            Status.Content = "Finding Latest SC-SR Version";
             var githubClient = new GitHubClient(new ProductHeaderValue(GITHUB_USER_AGENT, "1.0.0.0"));
 
             var releases = await githubClient.Repository.Release.GetAll(GITHUB_USERNAME, GITHUB_REPOSITORY);
@@ -120,7 +108,7 @@ namespace AutoUpdater
 
                     foreach (var asset in release.Assets)
                     {
-                        if (asset.Name.ToLower().StartsWith("dcs-simpleradiostandalone") &&
+                        if (asset.Name.ToLower().StartsWith("SC-SR Installer") &&
                             asset.Name.ToLower().Contains(".zip"))
                         {
                             changelogURL = release.HtmlUrl;
@@ -134,7 +122,7 @@ namespace AutoUpdater
                                 if (path.Length > 0)
                                 {
                                     var latestVersion = new Version(release.TagName.Replace("v", ""));
-                                    var serverVersion = Assembly.LoadFile(Path.Combine(path, "SR-Server.exe")).GetName().Version;
+                                    var serverVersion = Assembly.LoadFile(Path.Combine(path, "SC-SR-Server.exe")).GetName().Version;
 
                                     if (serverVersion < latestVersion)
                                     {
@@ -287,14 +275,6 @@ namespace AutoUpdater
 
                 if (!ServerInstall())
                 {
-
-                    while (IsDCSRunning())
-                    {
-                        MessageBox.Show(
-                            "Please Close DCS \n\nSRS cannot be installed - please close DCS before hitting OK \n\n",
-                            "Close DCS",
-                            MessageBoxButton.OK, MessageBoxImage.Warning);
-                    }
 
                     var releaseNotes = MessageBox.Show(
                         "Do you want to read the release notes? \n\nHighly recommended before installing! \n\n",
