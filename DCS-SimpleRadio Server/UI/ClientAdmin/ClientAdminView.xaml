@@ -7,12 +7,13 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              Width="450"
              Height="600"
+             Background="#1f2022"
              mc:Ignorable="d">
     <Grid>
         <!--  Defines a context menu  -->
 
 
-        <ListBox Name="Clients" />
+        <ListBox Name="Clients" Background="#FF1F2022" />
 
     </Grid>
 </UserControl>

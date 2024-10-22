@@ -2,11 +2,11 @@
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-             xmlns:local="clr-namespace:Ciribob.DCS.SimpleRadio.Standalone.Server.UI"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              xmlns:p="clr-namespace:Ciribob.DCS.SimpleRadio.Standalone.Server.Properties"
              Width="330"
              Height="575"
+             Background="#1f2022"
              mc:Ignorable="d">
     <ScrollViewer VerticalScrollBarVisibility="Visible"  Margin="0,0,0,0" >
         <StackPanel Orientation="Vertical" Margin="5" >
@@ -56,22 +56,27 @@
                             Grid.Column="1">
                     <StackPanel Orientation="Horizontal">
                         <Label Width="55"
+                               Foreground="LightBlue"
                                HorizontalAlignment="Left"
                                VerticalAlignment="Top"
                                Content="{x:Static p:Resources.LabelClients}" />
+                        
                         <Label x:Name="ClientsCount"
                                Width="44"
+                               Foreground="LightBlue"
                                HorizontalAlignment="Left"
                                VerticalAlignment="Top"
                                Content="0" />
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
                         <Label Width="55"
+                               Foreground="LightBlue"
                                HorizontalAlignment="Left"
                                VerticalAlignment="Top"
                                Content="{x:Static p:Resources.LabelPort}" />
                         <Label x:Name="ListeningPort"
                                Width="44"
+                               Foreground="LightBlue"
                                HorizontalAlignment="Left"
                                VerticalAlignment="Top"
                                Content="5002" />
@@ -84,6 +89,7 @@
                 <Button x:Name="ShowClientList"
                         Width="75"
                         Height="20"
+                        
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
                         Content="{x:Static p:Resources.BtnClientAdmin}" Grid.Row="0"
@@ -93,6 +99,7 @@
                     HorizontalAlignment="Left"
                     VerticalAlignment="Center"
                     Content="{x:Static p:Resources.LabelSecurity}"
+                    Foreground="LightBlue"
                     Grid.Row="1"
                     Grid.Column="0" Grid.ColumnSpan="2"/>
 
@@ -106,6 +113,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelSpectator}"
+                       Foreground="LightBlue"
                        Grid.Row="2"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -122,6 +130,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelExportList}"
+                       Foreground="LightBlue"
                        Grid.Row="3"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -138,6 +147,7 @@
                         HorizontalAlignment="Center" />
 
                 <Label Content="{x:Static p:Resources.LabelLOS}"
+                       Foreground="LightBlue"
                        Grid.Row="4"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -154,6 +164,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelDistanceLimit}"
+                       Foreground="LightBlue"
                        Grid.Row="5"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -170,6 +181,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelRealTx}"
+                       Foreground="LightBlue"
                        Grid.Row="6"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -186,6 +198,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelRealRx}"
+                       Foreground="LightBlue"
                        Grid.Row="7"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -202,6 +215,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelRadioExpansion}"
+                       Foreground="LightBlue"
                        Grid.Row="8"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -218,6 +232,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelRadioEncryption}"
+                       Foreground="LightBlue"
                        Grid.Row="9"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -234,6 +249,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelStrictEncryption}"
+                       Foreground="LightBlue"
                        Grid.Row="10"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -250,6 +266,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelCheckBetaUpdates}"
+                       Foreground="LightBlue"
                        Grid.Row="11"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -267,6 +284,7 @@
 
 
                 <Label Content="{x:Static p:Resources.LabelExternalAWACS}"
+                       Foreground="LightBlue"
                        Grid.Row="12"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -283,6 +301,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelExternalAWACSBluePass}"
+                       Foreground="LightBlue"
                        Grid.Row="13"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -300,6 +319,7 @@
                          HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelExternalAWACSRedPass}"
+                       Foreground="LightBlue"
                        Grid.Row="14"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -317,6 +337,7 @@
                          HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelTestFreq}"
+                       Foreground="LightBlue"
                        Grid.Row="15"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -335,6 +356,7 @@
 
 
                 <Label Content="{x:Static p:Resources.LabelTunedCount}"
+                       Foreground="LightBlue"
                        Grid.Row="16"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -351,6 +373,7 @@
                        HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelGlobalLobbyFreq}"
+                       Foreground="LightBlue"
                        Grid.Row="17"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -368,6 +391,7 @@
                          HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelOverrideEffectsOnGlobal}"
+                       Foreground="LightBlue"
                        Grid.Row="18"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -384,6 +408,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelLotATCExport}"
+                       Foreground="LightBlue"
                        Grid.Row="19"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -400,6 +425,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelShowTransmitterName}"
+                       Foreground="LightBlue"
                        Grid.Row="20"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -416,6 +442,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelTransmissionLog}"
+                       Foreground="LightBlue"
                        Grid.Row="21"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -432,6 +459,7 @@
                         HorizontalAlignment="Center"/>
 
                 <Label Content="{x:Static p:Resources.LabelArchiveTime}"
+                       Foreground="LightBlue"
                        Grid.Row="22"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"
@@ -466,6 +494,7 @@
                 </StackPanel>
 
                 <Label Content="{x:Static p:Resources.LabelRetransmitNodeLimit}"
+                       Foreground="LightBlue"
                        Grid.Row="23"
                        Grid.Column="0" 
                        Grid.ColumnSpan="2"

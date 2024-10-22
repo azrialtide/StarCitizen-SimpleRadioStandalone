@@ -117,23 +117,14 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="CreateStartMenuShortcut" xml:space="preserve">
-    <value>Create Start menu shortcut</value>
-  </data>
-  <data name="dcsPathButton" xml:space="preserve">
-    <value>Locate</value>
-  </data>
   <data name="InstallButton" xml:space="preserve">
-    <value>Install / Update DCS-SRS</value>
+    <value>Install / Update SC-SR</value>
   </data>
   <data name="InstallingButton" xml:space="preserve">
     <value>Installing...</value>
   </data>
-  <data name="InstallScriptsCheckbox" xml:space="preserve">
-    <value>Install DCS Client Scripts - Only required for SRS Client NOT Server Only Installs</value>
-  </data>
   <data name="intro" xml:space="preserve">
-    <value>SimpleRadio Standalone Installer -</value>
+    <value>Star Citizen Standalone Radio -</value>
   </data>
   <data name="MsgBoxChange" xml:space="preserve">
     <value>Change Installer Settings?</value>
@@ -146,14 +137,6 @@ Yes - Pause install and make changes
 No - Run with previous install path and install scripts as default. 
 
 If unsure - hit Yes!</value>
-  </data>
-  <data name="MsgBoxDCS" xml:space="preserve">
-    <value>Please Close DCS</value>
-  </data>
-  <data name="MsgBoxDCSText" xml:space="preserve">
-    <value>DCS must now be closed before continuing the install or uninstall!
-
-Close DCS and please try again.</value>
   </data>
   <data name="MsgBoxExtracted" xml:space="preserve">
     <value>Please Extract Installation zip</value>
@@ -172,14 +155,7 @@ Do not run the installer from the zip as it wont work!</value>
 Make sure you extract all the files in the zip then run the Installer</value>
   </data>
   <data name="MsgBoxFolder" xml:space="preserve">
-    <value>SR Standalone Installer</value>
-  </data>
-  <data name="MsgBoxFolderText" xml:space="preserve">
-    <value>Unable to find DCS Folder in Saved Games!
-
-Please check the path to the "Saved Games" folder
-
-Make sure you are selecting the "Saved Games" folder - NOT the DCS folder inside "Saved Games" and NOT the DCS installation directory</value>
+    <value>Star Citizen Standalone Radio Installer</value>
   </data>
   <data name="MsgBoxInstallError" xml:space="preserve">
     <value>Installation Error</value>
@@ -188,23 +164,19 @@ Make sure you are selecting the "Saved Games" folder - NOT the DCS folder inside
     <value>Error with installation - please post your installer-log.txt on the SRS Discord for Support</value>
   </data>
   <data name="MsgBoxInstallSuccessText" xml:space="preserve">
-    <value>Installation / Update Completed Successfully!
-Installed DCS Scripts to:
-</value>
+    <value>Installation / Update Completed Successfully!</value>
   </data>
   <data name="MsgBoxInstallSuccessText2" xml:space="preserve">
     <value>Installation / Update Completed Successfully!</value>
   </data>
   <data name="MsgBoxInstallTitle" xml:space="preserve">
-    <value>SR Standalone Installer</value>
+    <value>Star Citizen Standalone Radio Installer</value>
   </data>
   <data name="MsgBoxRemovedText" xml:space="preserve">
-    <value>SR Standalone Removed Successfully!
-
-Containing folder left just in case you want favourites or frequencies</value>
+    <value>Removed Successfully!</value>
   </data>
   <data name="MsgBoxRemovedText2" xml:space="preserve">
-    <value>Removed SRS Successfully!</value>
+    <value>Removed Successfully!</value>
   </data>
   <data name="MsgBoxUninstallError" xml:space="preserve">
     <value>Error with Uninstaller</value>
@@ -213,27 +185,21 @@ Containing folder left just in case you want favourites or frequencies</value>
     <value>Error with uninstaller - please post your installer-log.txt on the SRS Discord for Support</value>
   </data>
   <data name="MsgBoxUninstalling" xml:space="preserve">
-    <value>Uninstalling SRS</value>
+    <value>Uninstalling SC-SR</value>
   </data>
   <data name="RemoveButton" xml:space="preserve">
-    <value>Remove DCS-SRS</value>
-  </data>
-  <data name="ServerNote" xml:space="preserve">
-    <value>Please Note: Server installs will need to manually install the DCS-SRS-AutoConnectGameGUI.lua - found in the SRS Install Location in the Scripts folder. Installation instructions are in the file.</value>
+    <value>Remove SC-SR</value>
   </data>
   <data name="srPathButton" xml:space="preserve">
-    <value>Locate</value>
+    <value>...</value>
   </data>
   <data name="step2" xml:space="preserve">
-    <value>Step 1: Pick Install Location</value>
-  </data>
-  <data name="step3" xml:space="preserve">
-    <value>Step 2: Locate Saved Games Folder - Not DCS</value>
+    <value>Pick Install Location</value>
   </data>
   <data name="step4" xml:space="preserve">
-    <value>Step 3: Install Or Remove DCS-SRS</value>
+    <value>Install or Remove SC-SR</value>
   </data>
   <data name="Title" xml:space="preserve">
-    <value>DCS-SRS Installer</value>
+    <value>SC-SR Installer</value>
   </data>
 </root>

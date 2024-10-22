@@ -4,14 +4,11 @@
              xmlns:local="clr-namespace:Installer"
              StartupUri="MainWindow.xaml" Startup="ApplicationStartup">
     <Application.Resources>
-
-
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-
+        <ResourceDictionary Source="Resources/Theme.xaml">
+        <ResourceDictionary.MergedDictionaries>
+                <!-- Other merged dictionaries here -->
             </ResourceDictionary.MergedDictionaries>
+            <!-- Other app resources here -->
         </ResourceDictionary>
-
-
     </Application.Resources>
 </Application>

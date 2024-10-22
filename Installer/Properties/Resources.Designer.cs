@@ -61,25 +61,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create Start menu shortcut.
-        /// </summary>
-        internal static string CreateStartMenuShortcut {
-            get {
-                return ResourceManager.GetString("CreateStartMenuShortcut", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Locate.
-        /// </summary>
-        internal static string dcsPathButton {
-            get {
-                return ResourceManager.GetString("dcsPathButton", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Install / Update DCS-SRS.
+        ///   Looks up a localized string similar to Install / Update SC-SR.
         /// </summary>
         internal static string InstallButton {
             get {
@@ -97,16 +79,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Install DCS Client Scripts - Only required for SRS Client NOT Server Only Installs.
-        /// </summary>
-        internal static string InstallScriptsCheckbox {
-            get {
-                return ResourceManager.GetString("InstallScriptsCheckbox", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SimpleRadio Standalone Installer -.
+        ///   Looks up a localized string similar to Star Citizen Standalone Radio -.
         /// </summary>
         internal static string intro {
             get {
@@ -135,26 +108,6 @@ namespace Installer.Properties {
         internal static string MsgBoxChangeText {
             get {
                 return ResourceManager.GetString("MsgBoxChangeText", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Please Close DCS.
-        /// </summary>
-        internal static string MsgBoxDCS {
-            get {
-                return ResourceManager.GetString("MsgBoxDCS", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to DCS must now be closed before continuing the install or uninstall!
-        ///
-        ///Close DCS and please try again..
-        /// </summary>
-        internal static string MsgBoxDCSText {
-            get {
-                return ResourceManager.GetString("MsgBoxDCSText", resourceCulture);
             }
         }
         
@@ -199,24 +152,11 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SR Standalone Installer.
+        ///   Looks up a localized string similar to Star Citizen Standalone Radio Installer.
         /// </summary>
         internal static string MsgBoxFolder {
             get {
                 return ResourceManager.GetString("MsgBoxFolder", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Unable to find DCS Folder in Saved Games!
-        ///
-        ///Please check the path to the &quot;Saved Games&quot; folder
-        ///
-        ///Make sure you are selecting the &quot;Saved Games&quot; folder - NOT the DCS folder inside &quot;Saved Games&quot; and NOT the DCS installation directory.
-        /// </summary>
-        internal static string MsgBoxFolderText {
-            get {
-                return ResourceManager.GetString("MsgBoxFolderText", resourceCulture);
             }
         }
         
@@ -239,9 +179,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Installation / Update Completed Successfully!
-        ///Installed DCS Scripts to:
-        ///.
+        ///   Looks up a localized string similar to Installation / Update Completed Successfully!.
         /// </summary>
         internal static string MsgBoxInstallSuccessText {
             get {
@@ -259,7 +197,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SR Standalone Installer.
+        ///   Looks up a localized string similar to Star Citizen Standalone Radio Installer.
         /// </summary>
         internal static string MsgBoxInstallTitle {
             get {
@@ -268,9 +206,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to SR Standalone Removed Successfully!
-        ///
-        ///Containing folder left just in case you want favourites or frequencies.
+        ///   Looks up a localized string similar to Removed Successfully!.
         /// </summary>
         internal static string MsgBoxRemovedText {
             get {
@@ -279,7 +215,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Removed SRS Successfully!.
+        ///   Looks up a localized string similar to Removed Successfully!.
         /// </summary>
         internal static string MsgBoxRemovedText2 {
             get {
@@ -306,7 +242,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Uninstalling SRS.
+        ///   Looks up a localized string similar to Uninstalling SC-SR.
         /// </summary>
         internal static string MsgBoxUninstalling {
             get {
@@ -315,7 +251,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Remove DCS-SRS.
+        ///   Looks up a localized string similar to Remove SC-SR.
         /// </summary>
         internal static string RemoveButton {
             get {
@@ -324,16 +260,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Please Note: Server installs will need to manually install the DCS-SRS-AutoConnectGameGUI.lua - found in the SRS Install Location in the Scripts folder. Installation instructions are in the file..
-        /// </summary>
-        internal static string ServerNote {
-            get {
-                return ResourceManager.GetString("ServerNote", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Locate.
+        ///   Looks up a localized string similar to ....
         /// </summary>
         internal static string srPathButton {
             get {
@@ -342,7 +269,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Step 1: Pick Install Location.
+        ///   Looks up a localized string similar to Pick Install Location.
         /// </summary>
         internal static string step2 {
             get {
@@ -351,16 +278,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Step 2: Locate Saved Games Folder - Not DCS.
-        /// </summary>
-        internal static string step3 {
-            get {
-                return ResourceManager.GetString("step3", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Step 3: Install Or Remove DCS-SRS.
+        ///   Looks up a localized string similar to Install or Remove SC-SR.
         /// </summary>
         internal static string step4 {
             get {
@@ -369,7 +287,7 @@ namespace Installer.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to DCS-SRS Installer.
+        ///   Looks up a localized string similar to SC-SR Installer.
         /// </summary>
         internal static string Title {
             get {
